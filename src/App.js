@@ -1,7 +1,12 @@
-import { Border } from './app/components/border';
+// import { Border } from './app/components/border';
 import { Header } from './app/header';
 import {Main} from './app/main';
 import {BlockInfo} from './app/components/block.info'
+import { Gallery } from './app/gallery';
+import { Contacts } from './app/contacts';
+import { Reviews } from './app/reviews';
+import { Footer } from './app/footer';
+
 import './css/App.css';
 import './css/components.css';
 
@@ -46,6 +51,12 @@ function App() {
         header={'Unlock your bonus wealth. As your home value rises throughout the years, so does your future net-worth.'} 
         description={'As partners in the home, when you win, we win. Bonus™ allows you to keep ownership in the home and keep building equity over the years to cash out later when the home goes up in value. Never miss out on your homes future worth.'} 
       />
+
+      <Gallery />
+      <Reviews />
+
+      <Contacts />
+      <Footer />
     </div>
   );
 }

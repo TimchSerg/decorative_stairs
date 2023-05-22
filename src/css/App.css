@@ -135,6 +135,42 @@ color: #C3BAB1;
   color: #816c6c;
 }
 
+.contacts{
+  background-color: #000;
+  color: #fff;
+}
+
+.footer{
+  background-color: #000;
+  color: #fff;
+}
+
+.footer .footer-copy{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 11px;
+  /* identical to box height, or 100% */
+
+  text-align: right;
+
+  color: #E4D8CC;
+}
+
+.footer-info {
+  height: 68px;
+  padding: 1rem 3rem;
+}
+
+.footer-border{
+  height: 1px;
+  width: calc(100% - 10vw);
+  background: rgba(228, 216, 204, 0.16);
+  border-radius: 0px;
+  margin: 0 auto;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

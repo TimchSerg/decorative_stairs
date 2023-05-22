@@ -8,7 +8,7 @@ export function Main(){
       
       <div className='col-12 main-description'>
         <div className='main-h col-12 col-md-8'>
-            <h1>Изготовление и установка домашних лестниц для вашего дома под заказ</h1>
+            <h1>Изготовление и монтаж лестниц для дома под ключ</h1>
             <span>Мы поможем Вам подобрать материал и дизайн для вашей будущей лестницы</span>
         </div>
         <div className='main-btn'>
