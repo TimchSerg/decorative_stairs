@@ -3,15 +3,15 @@ import React from 'react';
 export function Contacts() {
 
   return (
-    <div className='contacts d-flex justify-content-center col-12 flex-direction-column'>
+    <div className='contacts d-flex justify-content-between align-items-center col-12 padding-setup'>
       <h2>Контакты</h2>
 
-      Почта: s.timoshenko@yandex.ru
-      Часы работы: Пн-Вс 8:00 до 20:00
+      <span>Почта: s.timoshenko@yandex.ru</span>
+      <span>Часы работы: Пн-Вс 8:00 до 20:00</span>
 
-      Часы приема заказов: Пн-Сб 09:00 до 21:00
+      <span>Часы приема заказов: Пн-Сб 09:00 до 21:00</span>
 
-      <button className='main-btn-actions'>
+      <button className='main-btn-actions col-12 col-md-6'>
         Заказать звонок
       </button>
     </div>

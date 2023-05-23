@@ -138,6 +138,8 @@ color: #C3BAB1;
 .contacts{
   background-color: #000;
   color: #fff;
+  flex-direction: column;
+  height: 380px;
 }
 
 .footer{
