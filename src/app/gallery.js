@@ -1,60 +1,56 @@
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import React from 'react';
+import ImageGallery from 'react-image-gallery';
 
-export function Gallery() {
-  const [controlledSwiper, setControlledSwiper] = useState(null);
+const images = [
+  {
+    original: process.env.PUBLIC_URL + '/images/lestnica_1.jpg',
+    thumbnail: process.env.PUBLIC_URL + '/images/lestnica_1.jpg',
+    originalHeight: '450'
+  },
+  {
+    original: process.env.PUBLIC_URL + '/images/lestnica_1.jpg',
+    thumbnail: process.env.PUBLIC_URL + '/images/lestnica_1.jpg',
+    originalHeight: '450'
+  },
+  {
+    original: process.env.PUBLIC_URL + '/images/lestnica_1.jpg',
+    thumbnail: process.env.PUBLIC_URL + '/images/lestnica_1.jpg',
+    originalHeight: '450'
+  },
+  {
+    original: process.env.PUBLIC_URL + '/images/lestnica_1.jpg',
+    thumbnail: process.env.PUBLIC_URL + '/images/lestnica_1.jpg',
+    originalHeight: '450'
+  },
+  {
+    original: process.env.PUBLIC_URL + '/images/lestnica_1.jpg',
+    thumbnail: process.env.PUBLIC_URL + '/images/lestnica_1.jpg',
+    originalHeight: '450',
+  },
+  {
+    original: process.env.PUBLIC_URL + '/images/lestnica_1.jpg',
+    thumbnail: process.env.PUBLIC_URL + '/images/lestnica_1.jpg',
+    originalHeight: '450',
+  },
+  {
+    original: process.env.PUBLIC_URL + '/images/lestnica_1.jpg',
+    thumbnail: process.env.PUBLIC_URL + '/images/lestnica_1.jpg',
+    originalHeight: '450',
+  },
+  {
+    original: process.env.PUBLIC_URL + 'https://mobimg.b-cdn.net/v3/fetch/03/03f8cd3f6796daaacc1fe43ffb7704b7.jpeg?w=1470&r=0.5625',
+    thumbnail: process.env.PUBLIC_URL + 'https://mobimg.b-cdn.net/v3/fetch/03/03f8cd3f6796daaacc1fe43ffb7704b7.jpeg?w=1470&r=0.5625',
+    originalHeight: '450',
+    fullscreen: 'https://mobimg.b-cdn.net/v3/fetch/03/03f8cd3f6796daaacc1fe43ffb7704b7.jpeg?w=1470&r=0.5625'
+  },
+];
 
-  const items = [
-    {link: 'lestnica_1.jpg'},
-    {link: 'lestnica_1.jpg'},
-    {link: 'lestnica_1.jpg'},
-    {link: 'lestnica_1.jpg'},
-    {link: 'lestnica_1.jpg'},
-    {link: 'lestnica_1.jpg'},
-    {link: 'lestnica_1.jpg'},
-  ]
-
-  let data = items.map((item, index) => {
+export class Gallery extends React.Component {
+  render() {
     return (
-      <SwiperSlide
-        key={index}
-        className="ItemViewer-gallery--slide"
-        zoom={true}
-        virtualIndex={index}
-      >
-        <div
-          style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + '/images/' + item.link})`,
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center center',
-            width: '100%',
-            height: '380px',
-            margin:'0 3rem'
-          }}
-        >
-          asdas
-        </div>
-      </SwiperSlide>
+      <div className='' style={{padding: '2rem 0rem'}}>
+        <ImageGallery items={images} showFullscreenButton={false}/>
+      </div>
     );
-  });
-
-  return (
-    <div>
-      Наши работы
-
-      <Swiper
-        cssMode={true}
-        navigation={true}
-        pagination={true}
-        mousewheel={true}
-        keyboard={true}
-        modules={[Navigation, Pagination]}
-        className="mySwiper"
-      >
-        {data}
-      </Swiper>
-    </div>
-  );
+  }
 }

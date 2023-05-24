@@ -22,6 +22,7 @@
   background-color: #ffffffb8;
   padding: 1.5rem 5rem;
   align-items: center;
+  z-index: 999;
 }
 
 .App-header ul{

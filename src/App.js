@@ -9,12 +9,8 @@ import { Footer } from './app/footer';
 
 import './css/App.css';
 import './css/components.css';
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/zoom';
-import 'swiper/css/scrollbar';
-// import 'swiper/css/pagination.css';
+
+import "react-image-gallery/styles/css/image-gallery.css";
 
 function App() {
   return (
