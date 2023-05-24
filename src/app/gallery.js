@@ -49,6 +49,8 @@ export class Gallery extends React.Component {
   render() {
     return (
       <div className='' style={{padding: '2rem 0rem'}}>
+        <h2>Наши работы</h2>
+
         <ImageGallery items={images} showFullscreenButton={false}/>
       </div>
     );
