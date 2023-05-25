@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageGallery from 'react-image-gallery';
+import { Carousel } from '@trendyol-js/react-carousel';
 
 const images = [
   {
@@ -45,14 +45,15 @@ const images = [
   },
 ];
 
-export class Gallery extends React.Component {
+export class Reviews extends React.Component {
   render() {
     return (
-      <div className='' style={{padding: '2rem 0rem'}}>
-        <h2>Наши работы</h2>
-
-        <ImageGallery items={images} showFullscreenButton={false}/>
-      </div>
+      <Carousel show={3.5} slide={2} transition={0.5}>
+          <p color="#f27a1a">We love Trendyol orange</p>
+          <p color="#d53f8c">This is our github</p>
+          <p color="#16be48">We love Trendyol green</p>
+          <p color="#3f51b5">This is our website</p>
+      </Carousel>
     );
   }
 }

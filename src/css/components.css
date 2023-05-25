@@ -1,7 +1,7 @@
 .border-style{
   width: 100%;
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
   border: 2px solid #d7791b;
 }
 
@@ -38,7 +38,15 @@
 }
 
 .block-info-header{
-  margin: 2rem 0px;
+  /* margin: .5rem 0px; */
+}
+
+.block-info-project strong{
+  color: rgb(215, 121, 27);
+}
+
+.block-info-project span{
+  color: #626262;
 }
 
 .block-info-title{
@@ -81,3 +89,33 @@
 .image-gallery-content .image-gallery-slide .image-gallery-image {
   height: inherit;
 } */
+
+.block-info-point{
+  width: 50px;
+  height: 50px;
+  background: #96DBC6;
+  border-radius: 100px;
+  padding: 25px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 32px !important;
+  color: #5a4d4d !important;
+}
+
+.review-view__user-icon {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  margin-right: 12px;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.reviews{
+  font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    text-align: initial;
+    line-height: 28px;
+}
