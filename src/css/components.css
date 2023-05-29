@@ -108,8 +108,18 @@
   height: 40px;
   text-decoration: none;
   margin-right: 12px;
-  background-size: contain;
+  background-size: cover;
   border-radius: 50%;
+  background-repeat: no-repeat;
+}
+
+.review-view__user-text {
+  background-color: rgb(187, 211, 255);
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 7px;
 }
 
 .reviews{
