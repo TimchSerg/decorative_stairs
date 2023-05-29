@@ -13,7 +13,7 @@ export function Main(){
         </div>
         <div className='main-btn'>
             <button className='main-btn-actions'>
-              Заказать звонок
+              Заказать проект
             </button>
             <button className='main-btn-works'>
               Почему мы?
