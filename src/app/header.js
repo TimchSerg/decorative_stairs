@@ -13,7 +13,7 @@ export function Header() {
         </ul>
       </div>
       <div className='col-6 justify-content-end d-flex'>
-        <a href="tel:79191348485" className='header-text'>+7(919)-134-84-85</a>
+        <a href="tel:79191348485" className='header-text'>+7(919)-xxx-xx-xx</a>
       </div>
     </header>
   );
