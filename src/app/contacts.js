@@ -8,8 +8,8 @@ export function Contacts() {
 
       <span>Почта: forest-room46@yandex.ru</span>
 
-      <span>Телефон: +7(919)-ХХХ-ХХ-ХХ</span>
-
+      <span>Телефон: +7(930)-852-64-43</span>
+      
       <span>Часы работы: Пн-Вс 8:00 до 20:00</span>
 
       <span>Часы приема заказов: Пн-Сб 09:00 до 21:00</span>

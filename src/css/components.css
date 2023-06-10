@@ -7,7 +7,7 @@
 
 .block-info-img {
   width: 518px;
-  height: 500px;
+  height: 308px;
   border-radius: 12px;
   background-size: cover;
   background-position: center;
@@ -53,8 +53,8 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 19px;
-  line-height: 36px;
+  font-size: 16px;
+  line-height: 24px;
   color: #101010;
   align-self: center;
   margin-left: 2rem;
@@ -64,8 +64,9 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
-  line-height: 46px;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 1rem;
   letter-spacing: 1px;
   color: #101010;
   text-align: initial;
@@ -91,11 +92,10 @@
 } */
 
 .block-info-point{
-  width: 50px;
-  height: 50px;
   background: #96DBC6;
   border-radius: 100px;
-  padding: 25px;
+  padding: 10px;
+
 }
 
 .slick-prev:before, .slick-next:before {

@@ -19,6 +19,7 @@
     .main {
       height: 748px;
       background-size: 50%;
+      padding: 5rem 1rem;
     }
 
     .main-description {
@@ -33,6 +34,29 @@
 
     .slick-slider{
       width: 100%;
+    }
+
+    .block-info-point{
+      padding: 25px;
+    }
+
+    .block-info-text h3{
+      font-size: 35px;
+      line-height: 46px;
+      margin-top: 0rem;
+    }
+
+    .block-info-title{
+      font-size: 19px;
+      line-height: 36px;
+    }
+
+    .block-info {
+        /* margin-top: 5rem; */
+    }
+
+    .block-info-img {
+      height: 500px;
     }
   }
 

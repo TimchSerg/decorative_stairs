@@ -4,9 +4,10 @@ import { Border } from './components/border';
 export function ReleaseInfo(props) {
   const { item } = props;
   const { position, color } = props;
+  let paddingView = window.innerWidth > 768 ? '5rem' : '0rem';
   
   return (
-    <div className="block-info d-flex flex-wrap" style={{ paddingTop: '5rem', flexDirection: `${position === 'right' ? 'row-reverse' : 'row'} `}}>
+    <div className="block-info d-flex flex-wrap" style={{ paddingTop: paddingView, flexDirection: `${position === 'right' ? 'row-reverse' : 'row'} `}}>
       <div className='col-12 col-md-6 d-flex' style={{justifyContent: `center`}}>
           <div className='block-info-img' style={{
             backgroundImage: `url(${process.env.PUBLIC_URL + item.img})`
@@ -21,19 +22,19 @@ export function ReleaseInfo(props) {
         <Border color={color}/>
 
         <div className='col-12 block-info-title'>
-          <div className='col-12 d-flex justify-content-start my-2 block-info-project'>
+          <div className='col-12 d-flex justify-content-start my-2 block-info-project flex-column flex-md-row'>
             <strong className='me-2'>ТИП ЛЕСТНИЦЫ: </strong>
             <span>{item.type}</span>
           </div>
-          <div className='col-12 d-flex justify-content-start my-2 block-info-project'>
+          <div className='col-12 d-flex justify-content-start my-2 block-info-project flex-column flex-md-row'>
             <strong className='me-2'>ПОКРЫТИЕ: </strong> 
             <span>{item.coating}</span>
           </div>
-          <div className='col-12 d-flex justify-content-start my-2 block-info-project'>
+          <div className='col-12 d-flex justify-content-start my-2 block-info-project flex-column flex-md-row'>
             <strong className='me-2'>МАТЕРИАЛ: </strong>
             <span>{item.material}</span>
           </div>
-          <div className='col-12 d-flex justify-content-start my-2 block-info-project'>
+          <div className='col-12 d-flex justify-content-center justify-content-md-start my-2 block-info-project'>
             <strong className='me-2'>ЦЕНА: </strong>
             <span style={{fontSize: '32px', fontWeight: '800'}} >{item.price}</span>
           </div>

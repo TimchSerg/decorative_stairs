@@ -2,7 +2,7 @@ import React from 'react';
 
 export function Main(){
   return (
-    <div className="main padding-setup" style={{ 
+    <div className="main " style={{ 
         backgroundImage: `url(${process.env.PUBLIC_URL + '/images/lestnica_1.jpg'})` 
       }}>
       

@@ -47,7 +47,7 @@
 }
 
 .padding-setup{
-  padding: 7rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .main {
@@ -55,6 +55,7 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
+  padding: 7rem 1rem;
 }
 
 .main-description {
