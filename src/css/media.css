@@ -8,6 +8,32 @@
       padding: 1.5rem 5rem;
     }
 
+    .main-description {
+      background-color: #ffffff00;
+    }
+
+    .padding-setup{
+      padding: 5rem 3rem;
+    }
+
+    .main {
+      height: 748px;
+      background-size: 50%;
+    }
+
+    .main-description {
+      justify-content: end;
+      margin-top: 0rem;
+    }
+
+    .main-h h1{
+      font-size: 57px;
+      line-height: 60px;
+    }
+
+    .slick-slider{
+      width: 100%;
+    }
   }
 
   @media screen and (min-width: 992px) {

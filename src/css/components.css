@@ -133,3 +133,12 @@
 .navbar-nav a{
   text-align: start;
 }
+
+.slick-slider{
+  width: 265px;
+  margin: 0 auto;
+}
+
+.slick-prev {
+  left: -37px !important;
+}

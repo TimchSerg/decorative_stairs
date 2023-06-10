@@ -47,58 +47,55 @@
 }
 
 .padding-setup{
-  padding: 5rem 3rem;
+  padding: 7rem 1rem;
 }
 
 .main {
-  height: 748px;
-    
+  height: 580px;
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain;
-  background-size: 50%;
+  background-size: cover;
 }
 
 .main-description {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-start;
+  margin-top: 2rem;
   align-items: baseline;
+  background-color: #ffffffe0;
+  border-radius: 15px;
 }
 
 .main-h {
   text-align: start;
-  margin-bottom: 1rem;
-  margin-left: 1rem;
+  margin: 1rem;
 }
 
 .main-h h1{
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 57px;
-  line-height: 60px;
-  color: #e59d56;
-    text-shadow: 2px 2px 1px white;
+  /* font-size: 57px;
+  line-height: 60px; */
+  font-size: 40px;
+  line-height: 38px;
+  color: #d3802e;
+  text-shadow: 2px 2px 1px white;
 }
 
 .main-h span{
-  /* position: absolute;
-width: 561px;
-height: 28px;
-left: 64px;
-top: 546px; */
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 28px;
-/* identical to box height, or 156% */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
 
 
-color: #C3BAB1;
+  color: #423f3d;
 }
 
 .main-btn-actions{
@@ -119,6 +116,7 @@ color: #C3BAB1;
   line-height: 24px;
   text-align: center;
   color: #FFFFFF;
+  margin-bottom: 1rem;
 }
 
 .main-btn-works{
@@ -135,6 +133,7 @@ color: #C3BAB1;
   line-height: 24px;
   text-align: center;
   color: #816c6c;
+  margin-right: 1rem;
 }
 
 .header-block{

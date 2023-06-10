@@ -25,12 +25,16 @@ const reviews = [
 
 export class Reviews extends Component {
   render() {
+
+    let slidesPerView = window.innerWidth > 768 ? 2 : 1;
+
     const settings = {
       className: "center",
       centerMode: true,
       infinite: true,
-      centerPadding: "60px",
-      slidesToShow: 2,
+      autoplay: true,
+      centerPadding: "0px",
+      slidesToShow: slidesPerView,
       speed: 500
     };
 
