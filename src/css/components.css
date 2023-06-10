@@ -129,3 +129,7 @@
     text-align: initial;
     line-height: 28px;
 }
+
+.navbar-nav a{
+  text-align: start;
+}
