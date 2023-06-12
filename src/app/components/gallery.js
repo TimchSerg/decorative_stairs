@@ -13,17 +13,16 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 
 import photos from "./images";
 
-console.log(photos)
-
 export function Gallery() {
     const [index, setIndex] = useState(-1);
+    let targetRowHeight = window.innerWidth > 768 ? 350 : 175;
 
     return (
         <>
             <PhotoAlbum 
               photos={photos} 
               layout="rows" 
-              targetRowHeight={350} 
+              targetRowHeight={targetRowHeight} 
               onClick={({ index }) => setIndex(index)} 
             />
 

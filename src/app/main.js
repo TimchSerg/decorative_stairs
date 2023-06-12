@@ -7,7 +7,7 @@ export function Main(){
       }}>
       
       <div className='col-12 main-description'>
-        <div className='main-h col-12 col-md-8'>
+        <div className='main-h col-md-8'>
             <h1>Изготовление и монтаж лестниц для дома под ключ</h1>
             <span>Мы поможем Вам подобрать материал и дизайн для вашей будущей лестницы</span>
         </div>
@@ -15,9 +15,9 @@ export function Main(){
             <button className='main-btn-actions'>
               Заказать проект
             </button>
-            <button className='main-btn-works'>
+            {/* <button className='main-btn-works'>
               Почему мы?
-            </button>
+            </button> */}
         </div>
       </div>
       

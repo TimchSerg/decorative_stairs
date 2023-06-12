@@ -6,9 +6,9 @@ export function Contacts() {
     <div className='contacts d-flex justify-content-between align-items-center col-12 padding-setup'>
       <h2>Контакты</h2>
 
-      <span>Почта: forest-room46@yandex.ru</span>
+      <span>Почта: <a href="mailto:forest-room46@yandex.ru">forest-room46@yandex.ru</a></span>
 
-      <span>Телефон: +7(930)-852-64-43</span>
+      <span >Телефон: <a href="tel:79308526443" className='header-text' style={{fontSize: '16px'}}>+7(930)-852-64-43</a></span>
       
       <span>Часы работы: Пн-Вс 8:00 до 20:00</span>
 

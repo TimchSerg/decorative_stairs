@@ -51,7 +51,7 @@ function App() {
       <Main />
 
       <div className='col-12 padding-setup'>
-        <h2 className='mb-4 header-block'><u>Примеры проектов</u></h2>
+        <h2 className='mb-4 header-block'>Примеры проектов</h2>
 
         <ReleaseInfo item={items[1]} color="#B99FEA" position="left"/>
         <ReleaseInfo item={items[0]} color="#EBA789" position="right"/>
@@ -61,13 +61,13 @@ function App() {
       <WhoMy />
 
       <div className='col-12 padding-setup'>
-        <h2 className='mb-4 header-block'><u>Наши работы</u></h2>
+        <h2 className='mb-4 header-block'>Наши работы</h2>
 
         <Gallery />
       </div>
 
       <div className='col-12 padding-setup'>
-        <h2 className='mb-4 header-block'><u>Отзывы</u></h2>
+        <h2 className='mb-4 header-block'>Отзывы</h2>
 
         <Reviews />
       </div>
