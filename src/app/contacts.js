@@ -1,10 +1,10 @@
 import React from 'react';
 
-export function Contacts() {
+export function Contacts(props) {
 
   return (
     <div className='contacts d-flex justify-content-between align-items-center col-12 padding-setup'>
-      <h2>Контакты</h2>
+      <h2 id="contacts" className='link-header'>Контакты</h2>
 
       <span>Почта: <a href="mailto:forest-room46@yandex.ru">forest-room46@yandex.ru</a></span>
 
@@ -14,7 +14,7 @@ export function Contacts() {
 
       <span>Часы приема заказов: Пн-Сб 09:00 до 21:00</span>
 
-      <button className='main-btn-actions col-12 col-md-6'>
+      <button className='main-btn-actions col-12 col-md-6' onClick={()=> props.setShow(true)}>
         Заказать проект
       </button>
     </div>

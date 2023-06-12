@@ -38,8 +38,8 @@ export class Reviews extends Component {
       speed: 500
     };
 
-    const render = reviews.map( (review) => (
-      <div className="reviews p-3">
+    const render = reviews.map( (review, index) => (
+      <div className="reviews p-3" key={index}>
         <div className="reviews-logo d-flex">
         {/* review-view__user-icon */}
           {review.img ? (

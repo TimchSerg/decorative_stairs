@@ -154,3 +154,10 @@
 .me-auto{
   margin-top: 1rem;
 }
+
+.link-header:before {
+	display: block;
+	content: "";
+	height: 165px;
+    margin: -165px 0 0;
+}

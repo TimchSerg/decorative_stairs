@@ -1,6 +1,7 @@
 import React from 'react';
 
-export function Main(){
+export function Main(props){
+  const { setShow } = props;
   return (
     <div className="main " style={{ 
         backgroundImage: `url(${process.env.PUBLIC_URL + '/images/lestnica_1.jpg'})` 
@@ -12,7 +13,9 @@ export function Main(){
             <span>Мы поможем Вам подобрать материал и дизайн для вашей будущей лестницы</span>
         </div>
         <div className='main-btn'>
-            <button className='main-btn-actions'>
+            <button className='main-btn-actions' onClick={()=>{
+              setShow(true)
+            }}>
               Заказать проект
             </button>
             {/* <button className='main-btn-works'>

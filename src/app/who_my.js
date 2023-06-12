@@ -3,7 +3,7 @@ import React from 'react';
 export function WhoMy(){
   return (
     <div className="who-my padding-setup" >
-      <h2 className='mb-4 header-block'>Наши преимущества</h2>
+      <h2 id="my" className='mb-4 header-block link-header'>Наши преимущества</h2>
 
       <ul className='d-flex col-12 justify-content-start flex-wrap' style={{color: '#ffb66d'}}> 
         <li className='header-text text-start mb-3 col-12'>20-летний опыт работы с деревом, позволяет нам гарантировать качество услуг по изготовлению изделий.

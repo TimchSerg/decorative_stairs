@@ -46,7 +46,7 @@ export function ReleaseInfo(props) {
             <span style={{fontSize: '32px', fontWeight: '800'}} >{item.price}</span>
           </div>
           <div className='col-12 mt-3 mb-2'>
-            <button className='main-btn-actions py-2'>
+            <button className='main-btn-actions py-2' onClick={()=> props.setShow(true)}>
               Уточнить стоимость
             </button>
           </div>
