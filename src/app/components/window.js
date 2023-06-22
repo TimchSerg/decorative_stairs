@@ -8,10 +8,18 @@ import {phoneValidator} from '../components/form/validators/phone.validator';
 import PhoneField from './form/fields/phone';
 import TextField from './form/fields/text';
 
+import ApiController from '../../Api.controller';
+
+const api = new ApiController();
+
 export const Window = (props) => {
   const {show, setShow} = props;
   
-  const onSubmit = (values) => console.log(values);
+  const onSubmit = async (values) => {
+    const response = await api.post(`/mail/stairs/feedback`, values);
+console.log(response)
+    setShow(false);
+  };
 
   return (
     <>
@@ -48,7 +56,7 @@ export const Window = (props) => {
                 <div className="mt-1 mb-2">
                   <Field
                     validate={composeValidators(requiredValidator, phoneValidator)}
-                    name="login"
+                    name="phone"
                     label="Номер телефона:"
                     render={PhoneField}
                     settings={{
