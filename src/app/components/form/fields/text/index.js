@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import styles from "../styles.module.css";
 
 export const TextField = (props) => {
-  const { meta, icon, input, label, settings, help, style={} } = props;
+  const { meta, input, label, settings, style={} } = props;
   const ref = useRef(null);
 
   const focus = () => {

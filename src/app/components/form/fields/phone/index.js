@@ -1,11 +1,10 @@
 import React from "react";
-import { FieldRenderProps } from "react-final-form";
 import { IMaskInput } from "react-imask";
 
 import styles from "../styles.module.css";
 
 export const PhoneField = (props) => {
-  const { meta, icon, input, label, settings } = props;
+  const { meta, input, label, settings } = props;
 
   return (
     <React.Fragment>

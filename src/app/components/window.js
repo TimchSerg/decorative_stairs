@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import { Form, Field } from "react-final-form";
 
@@ -16,8 +16,8 @@ export const Window = (props) => {
   const {show, setShow} = props;
   
   const onSubmit = async (values) => {
-    const response = await api.post(`/mail/stairs/feedback`, values);
-console.log(response)
+    await api.post(`/mail/stairs/feedback`, values);
+
     setShow(false);
   };
 
