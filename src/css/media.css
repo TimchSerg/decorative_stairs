@@ -14,6 +14,7 @@
 
     .header-text, .header-text .nav-link{
       font-size: 16px;
+      width: auto;
     }
 
     .header-block{

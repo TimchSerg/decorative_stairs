@@ -66,7 +66,13 @@ export const Window = (props) => {
                   />
                 </div>
 
-               
+                <div data-customstyle="yes" className="col-12 p-2 mt-1 mb-2" style={{fontSize: "14px"}}>
+                  Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a 
+                    href="/policy" rel="noreferrer noopener" target="_blank" >
+                    политикой конфиденциальности
+                  </a>
+                  
+                .</div>
 
                 <div className="p-mt-2 col-12 d-flex justify-content-center">
                     <button
@@ -77,6 +83,8 @@ export const Window = (props) => {
                         Заказать консультацию
                     </button>
                 </div>
+
+                
             </form>
             )}
         />
